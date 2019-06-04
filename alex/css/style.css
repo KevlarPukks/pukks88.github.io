@@ -1,0 +1,222 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font: 100% Sanchez, serif;
+  background-image: radial-gradient(circle at top right, rgba(123, 1, 1, 0.92), rgba(184, 1, 2, 0.92)), url("../images/utd-ucl.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+body main {
+  flex: 1 0 auto;
+}
+body footer {
+  flex-shrink: 0;
+}
+body h1, body h2, body h3, body h4, body h5, body th {
+  font-family: Acme, sans-serif;
+  background: -webkit-linear-gradient(#ffe600, #EF9101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+body p, body li, body td {
+  font-family: Sanchez, serif;
+  background: -webkit-linear-gradient(#EF9101, #ffe600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+
+.title {
+  text-align: center;
+  background-color: #b80102;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 400%;
+  }
+}
+
+.quotes ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.quotes li {
+  text-align: center;
+  font-family: Cougette, cursive;
+  font-size: 65%;
+  padding-bottom: 10px;
+  font-style: italic;
+}
+@media (min-width: 768px) {
+  .quotes li {
+    font-size: 80%;
+  }
+}
+
+.image-container {
+  /*
+  background-image: url("../images/alex-treble.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  */
+  max-width: 1440px;
+  height: auto;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+}
+.image-container figcaption {
+  background: radial-gradient(circle at bottom right, black, rgba(0, 0, 0, 0.58));
+  margin: 0 3%;
+}
+.image-container p {
+  background: -webkit-linear-gradient(#EF9101, #ffe600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Cougette, cursive;
+  font-size: 70%;
+  font-style: italic;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+.image-container img {
+  width: 95%;
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+@media (min-width: 768px) {
+  .image-container p {
+    font-size: 90%;
+  }
+}
+@media (min-width: 1024px) {
+  .image-container p {
+    font-size: 100%;
+  }
+}
+
+main {
+  margin: 0 5px;
+}
+main ul {
+  list-style-type: none;
+}
+main li {
+  border-bottom: 1px solid #EF9101;
+  padding-top: 5px;
+  color: rgba(239, 145, 1, 0.55);
+  font-size: 80%;
+}
+@media (min-width: 768px) {
+  main .sub-title {
+    font-size: 150%;
+    margin-left: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  main .sub-title {
+    font-size: 300%;
+  }
+}
+@media (min-width: 768px) {
+  main section ul {
+    column-count: 2;
+    column-gap: 1em;
+    column-span: all;
+  }
+}
+main .table-portrait {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+main .table-portrait table {
+  margin-top: 15px;
+  width: 100%;
+  border-collapse: collapse;
+  flex-grow: 1;
+}
+main .table-portrait table thead {
+  background: radial-gradient(circle at bottom right, black, rgba(0, 0, 0, 0.58));
+  color: white;
+  font-weight: bold;
+}
+main .table-portrait table td, main .table-portrait table th {
+  padding: 6px;
+  border: 1px solid #EF9101;
+  text-align: left;
+}
+main .table-portrait table th:last-child, main .table-portrait table td:last-child {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  main .table-portrait table {
+    width: 50%;
+    display: inline;
+  }
+}
+main .table-portrait img {
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 15px;
+  margin-right: 10px;
+}
+main .table-portrait img .portrait {
+  max-width: 1440px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  flex-grow: 1;
+}
+@media (min-width: 768px) {
+  main .table-portrait img {
+    display: inline;
+  }
+}
+
+footer .links {
+  margin-top: 10px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer div {
+  text-align: center;
+  padding-top: 10px;
+}
+footer div i {
+  color: #EF9101;
+}
+footer div img {
+  max-width: 28px;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

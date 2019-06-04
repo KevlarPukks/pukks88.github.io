@@ -1,0 +1,293 @@
+$font-Acme: Acme, sans-serif;
+$font-Sanchez: Sanchez, serif;
+$font-ultra: Ultra, serif;
+$font-Courgette:Cougette,cursive;
+
+$bg-colour: rgba(123,1,1,0.92);
+$primary-colour2: rgba(184,1,2,0.92);
+$primary-colour3: rgba(184,1,2,100);
+$text-colour1: rgba(255, 230, 0);
+$secondary-colour2:  #EF9101;
+$secondary-colour3:  #E14F01;
+$secondary-colour: rgba(239, 145, 1, 0.55);
+
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 768px;
+
+// Small tablets (portrait view)
+$screen-md-min: 992px;
+
+// Tablets and small desktops
+$screen-lg-min: 1024px;
+
+// Large tablets and desktops
+$screen-xl-min: 1440px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+@mixin fade-in-func($seconds){
+  animation-name: fadein;
+  animation-duration: $seconds;
+}
+
+html,
+body,
+ul,
+ol {
+  margin:  0;
+  padding: 0;
+}
+html{
+  height:100%;
+}
+
+
+body{
+  min-height: 100%;
+  font:100% $font-Sanchez;
+  background-image: radial-gradient(circle at top right,$bg-colour,$primary-colour2),
+  url("../images/utd-ucl.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  main{
+    flex: 1 0 auto;
+  }
+  footer{
+    flex-shrink: 0;
+  }
+  h1,h2,h3,h4,h5,th{
+    font-family: $font-Acme;
+    background: -webkit-linear-gradient($text-colour1,$secondary-colour2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+@include fade-in-func(1s);
+
+  }
+  p,li,td{
+    font-family: $font-Sanchez;
+    background: -webkit-linear-gradient($secondary-colour2,$text-colour1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include fade-in-func(2s)
+  }
+
+}
+
+.title{
+
+  text-align: center;
+  background-color: $primary-colour3;
+ @include sm{
+   font-size:400%;
+ }
+
+}
+.quotes{
+  ul{
+    list-style-type: circle;
+    list-style-position: inside;
+
+  }
+  li{
+    text-align: center;
+    font-family: $font-Courgette;
+font-size: 65%;
+    padding-bottom: 10px;
+    font-style: italic;
+    @include sm{
+      font-size:80%;
+    }
+  }
+}
+.image-container{
+/*
+background-image: url("../images/alex-treble.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+*/
+
+  max-width: 1440px;
+  height: auto;
+text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+padding-top: 5px;
+figcaption{
+  background: radial-gradient(circle at bottom right,black, rgba(0, 0, 0, 0.58));
+margin: 0 3%;
+}
+  p{
+  background: -webkit-linear-gradient($secondary-colour2,$text-colour1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+    font-family: $font-Courgette;
+    font-size: 70%;
+    font-style: italic;
+    margin-top: 5px;
+padding-bottom: 5px;
+}
+  img{
+    width: 95%;
+@include fade-in-func(3s);
+  }
+ p{
+    @include sm{
+font-size: 90%;
+}
+   @include lg{
+     font-size: 100%;
+   }
+  }
+}
+main {
+  margin: 0 5px;
+  ul{
+    list-style-type: none;
+  }
+  li{
+    border-bottom: 1px solid $secondary-colour2;
+    padding-top: 5px;
+color: $secondary-colour;
+   font-size:  80%;
+
+  }
+  .sub-title {
+
+    @include sm {
+      font-size: 150%;
+      margin-left: 15px;
+    }
+    @include lg{
+      font-size: 300%;
+    }
+  }
+  section{
+
+    ul {
+
+    @include sm {
+      column-count: 2;
+      column-gap: 1em;
+      column-span: all;
+    }
+    }
+
+
+}
+.table-portrait{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  table{
+    margin-top: 15px;
+    width: 100%;
+    border-collapse: collapse;
+    flex-grow: 1;
+    thead{
+      background: radial-gradient(circle at bottom right,black, rgba(0, 0, 0, 0.58));
+      color: white;
+      font-weight: bold;
+    }
+
+    td,th{
+      padding: 6px;
+      border: 1px solid $secondary-colour2;
+      text-align: left;
+    }
+    th:last-child,td:last-child{
+      text-align: center;
+    }
+    @include sm {
+      width: 50%;
+      display: inline;
+    }
+
+  }
+
+  img{
+       width: 100%;
+       padding-left: 5px;
+       padding-top: 15px;
+    margin-right: 10px;
+       .portrait{
+         max-width: 1440px;
+         width: 100%;
+         text-align: center;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+flex-grow: 1;
+       }
+       @include sm{
+
+         display: inline;
+       }
+     }
+}
+
+}
+footer{
+  .links{
+    margin-top: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  div{
+    text-align: center;
+    padding-top: 10px;
+    i{
+      color: $secondary-colour2;
+    }
+    img{
+      max-width: 28px;
+    }
+
+    p{
+
+    }
+  }
+}
+
+@keyframes fadein {
+  from{
+
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
