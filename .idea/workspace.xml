@@ -43,8 +43,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alex/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="345">
               <caret line="197" column="11" lean-forward="true" selection-start-line="197" selection-start-column="11" selection-end-line="197" selection-end-column="11" />
+=======
+            <state relative-caret-position="-930">
+              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+>>>>>>> f880899be148ed57172bf61bd4e4b4e84a43dea6
             </state>
           </provider>
         </entry>
@@ -165,19 +170,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559630715537</updated>
+<<<<<<< HEAD
       <workItem from="1559630716588" duration="4059000" />
+=======
+      <workItem from="1559630716588" duration="3695000" />
+>>>>>>> f880899be148ed57172bf61bd4e4b4e84a43dea6
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="4059000" />
+=======
+    <option name="totallyTimeSpent" value="3695000" />
+>>>>>>> f880899be148ed57172bf61bd4e4b4e84a43dea6
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="960" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+>>>>>>> f880899be148ed57172bf61bd4e4b4e84a43dea6
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -220,8 +237,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alex/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="345">
           <caret line="197" column="11" lean-forward="true" selection-start-line="197" selection-start-column="11" selection-end-line="197" selection-end-column="11" />
+=======
+        <state relative-caret-position="-930">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+>>>>>>> f880899be148ed57172bf61bd4e4b4e84a43dea6
         </state>
       </provider>
     </entry>
